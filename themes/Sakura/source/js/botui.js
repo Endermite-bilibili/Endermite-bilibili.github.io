@@ -26,11 +26,11 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 endermite"
+            content: "这里是 Endermite"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
-                content: "一个没事闲逛的学生"
+                content: "某十八线人员~"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
@@ -69,29 +69,29 @@ function bot_ui_ini() {
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "原想好好搞信竞的，结果误打误撞进了Hexo"
+                    content: "然后..."
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "结果正好因为这件事"
+                        content: "想做一个独一无二的blog"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "才让我了解到自己的知识面多么的窄"
+                            content: "于是，就有了现在的这个blog"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "目前时间一般用来做题和补之前的知识"
+                                content: "主要还是因为我喜欢折腾嘛"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "总喜欢看番，于是..."
+                                    content: "毕竟，生命的意义在于折腾"
                                 }).then(function () {
                                     botui.action.button({
                                         delay: 1100,
                                         action: [{
-                                            text: "为什么叫endermite呢？ 🤔",
-                                            value: "其实，这个..."
+                                            text: "为什么叫Endermite呢？ 🤔",
+                                            value: "why-mashiro"
                                         }]
                                     }).then(function (a) {
                                         thirdpart()
@@ -106,12 +106,12 @@ function bot_ui_ini() {
         thirdpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "endermite的名字是来自MC中末影螨的名字，其实是准备做enderman的，但是发现有人先用了。"
+                content: "还是因为喜欢MC吧，其中一个怪物的名字就叫Endermite"
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
                     action: [{
-                        text: "为什么用GitHub呢？",
+                        text: "这是你第一个name了吗 🤔",
                         value: "why-cat"
                     }]
                 }).then(function (a) {
@@ -122,17 +122,17 @@ function bot_ui_ini() {
         fourthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为对GitHub有种执念… "
+                content: "不是的，原本还叫sortyes，模仿的amdyes，但是觉得太幼稚了"
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "但是觉得还是挺慢的。"
+                    content: "于是，就换成了现在的名字"
                 }).then(function () {
                     botui.action.button({
                         delay: 1500,
                         action: [{
-                            text: "那么也就是说，你不仅有GitHub域名？",
-                            value: "不然呢？"
+                            text: "对于这个网站还有什么打算吗(ง •_•)ง",
+                            value: "why-domain"
                         }]
                     }).then(function (a) {
                         fifthpart()
@@ -143,28 +143,12 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "不然呢？"
+                content: "emmmm，50%准备美化吧，毕竟这个网站才刚起步，原本的网站太丑了，用的next主题：endermite.oigat.cn"
             }).then(function () {
-                last_()
+                botui.message.add({
+                    delay: 1600,
+                    content: "那么，仔细看看我的博客吧？ ^_^"
+                })
             })
-        },
-		last_ = function () {
-            botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "那么为什么要使用叶修的头像呢",
-                            value: "不然呢？"
-                        }]
-                    })
-            }).then(function () {
-                 botui.message.add({
-                delay: 1E3,
-                content: "其实主要还是因为喜欢全职嘛"
-            }).then(function () {
-                 botui.message.add({
-                delay: 1E3,
-                content: "接下来，就好好看我的blog吧"
-            })
-			
         } 
 }

@@ -6,14 +6,16 @@ authorLink: hojun.cn
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 categories: 技术
-date: 2020-07-25 12:16:01
 comments: true
-tags: 
- - web
- - 悦读
+tags:
+  - web
+  - 悦读
 keywords: Sakura
 description: hexo-sakura主题使用教程
-photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
+photos: >-
+  https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
+abbrlink: 186f70d4
+date: 2020-07-25 12:16:01
 ---
 
 <a href="/" class="LinkCard">test</a>

@@ -15,7 +15,10 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: /
 root: /
-permalink: :title/
+permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
+abbrlink:
+    alg: crc32   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
 permalink_defaults:
 
 # Directory
@@ -105,10 +108,27 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-# offline config passed to sw-precache.
-service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
+# Offline
+## Config passed to sw-precache
+## https://github.com/JLHwung/hexo-offline
+offline:
+  maximumFileSizeToCacheInBytes: 10485760
   staticFileGlobs:
-  - public/**
+    - public/**
   stripPrefix: public
   verbose: true
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.example.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.another-example.org
+# mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
