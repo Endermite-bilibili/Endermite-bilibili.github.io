@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico">
   
   <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
@@ -493,6 +494,7 @@
       powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
+
 <!-- .site-info -->
   <!--壁纸切换7-25-->
   <div class="skin-menu no-select" id="mainskin"  style="position: fixed">
@@ -883,5 +885,5 @@ $(document).ready(function() {
 </script>
   <script src="/live2d-widget/autoload.js"></script>
   <script type="text/javascript" src="/js/linkcard.js"></script>
-</body>
-</html>
+<script>'use strict';'serviceWorker'in navigator&&navigator.serviceWorker.register('service-worker.js').then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case'installed':navigator.serviceWorker.controller?console.log('New or updated content is available.'):console.log('Content is now available offline!');break;case'redundant':console.error('The installing service worker became redundant.');}}}}).catch(function(a){console.error('Error during service worker registration:',a)});
+</script></body></html>
