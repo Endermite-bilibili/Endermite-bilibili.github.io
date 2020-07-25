@@ -145,10 +145,26 @@ function bot_ui_ini() {
                 delay: 1E3,
                 content: "不然呢？"
             }).then(function () {
-                botui.message.add({
-                    delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
-                })
+                last_()
             })
+        },
+		last_ = function () {
+            botui.action.button({
+                        delay: 1500,
+                        action: [{
+                            text: "那么为什么要使用叶修的头像呢",
+                            value: "不然呢？"
+                        }]
+                    })
+            }).then(function () {
+                 botui.message.add({
+                delay: 1E3,
+                content: "其实主要还是因为喜欢全职嘛"
+            }).then(function () {
+                 botui.message.add({
+                delay: 1E3,
+                content: "接下来，就好好看我的blog吧"
+            })
+			
         } 
 }
